@@ -8,7 +8,7 @@ https://www.linkedin.com/in/loric-brevet/
 
 ## Compile Tailwind CSS
 
-Simply use the Tailwind CSS to generate the `tailwind.css` file.
+Simply use the Tailwind CSS `cli` to generate the `tailwind.css` file.
 
 ```bash
 npx tailwindcss -o tailwind.css --jit --purge index.html --watch
