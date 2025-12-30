@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="tailwind.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Loric Brevet</title>
   </head>
   <body class="bg-gray-100 print:bg-white">
@@ -12,12 +12,12 @@
       <div class="p-7 print:flex">
         <img class="h-36 w-36 rounded-full -mt-32 print:mt-0 print:mr-4 print:h-24 print:w-24 border-4 border-white" src="profile.jpg" />
         <div class="pt-2 flex flex-wrap w-full">
-          <div class="w-full md:w-2/3 print:w-2/3">
+          <div class="w-full md:w-3/5 print:w-3/5">
             <h1 class="text-2xl font-bold text-gray-900">Loric Brevet</h1>
             <div class="text-base text-gray-800">Software Engineer</div>
-            <div class="text-sm text-gray-600">Geneva Area, Switzerland</div>
+            <div class="text-sm text-gray-600">Annecy, France</div>
           </div>
-          <div class="w-full md:w-1/3 print:w-1/3 mt-4 md:mt-0 print:mt-0 leading-tight tracking-tight">
+          <div class="w-full md:w-2/5 print:w-2/5 mt-4 md:mt-0 print:mt-0 leading-tight tracking-tight">
             <div class="flex items-center">
               <svg class="h-3 w-3 mr-2 text-gray-600" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
@@ -42,7 +42,7 @@
               <svg class="h-3 w-3 mr-2 text-gray-600" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
-              <a href="https://github.com/lobre" class="text-sm text-gray-800">https://github.com/lobre</a>
+              <a href="https://github.com/lobre" class="text-sm text-gray-800" target="_blank" rel="noopener noreferrer">https://github.com/lobre</a>
             </div>
           </div>
         </div>
@@ -51,13 +51,16 @@
       <div class="p-7">
         <h2 class="text-xl mb-4">About</h2>
         <p class="text-sm">
-          Passionate about programming, especially using Go. Mountains lover.
+          Software engineer driven by curiosity, technical depth, and system understanding.
         </p>
         <p class="text-sm mt-2">
-          Living in the Haute-Savoie region of France besides the Alps. This region is breathtaking for practicing trail running, hiking, swimrun, ski skating, snowboarding, and many more outdoor activities.
+          After more than a decade in the field, I have come to see software engineering as an ongoing exploration rather than a fixed specialization. I learn by digging into source code, understanding underlying layers, and tracing problems back to low level mechanisms, even when that means working in unfamiliar languages or tools.
         </p>
         <p class="text-sm mt-2">
-          Professionally working as a software engineer for over 5 years.
+          I approach design with a sense of mechanical sympathy, paying attention to how systems are designed to be used and where their limits lie. I focus more on patterns, constraints, and performance characteristics than on frameworks. Go is the language in which I am most proficient, and I value its ability to stay close to the machine while remaining readable and pragmatic.
+        </p>
+        <p class="text-sm mt-2">
+          Living in Annecy since 2020, I value balance and long term sustainability, both in systems and in teams. I tend to bring a calm presence to collaborative environments and help keep interactions simple and constructive when complexity grows.
         </p>
       </div>
       <hr/>
@@ -65,41 +68,165 @@
         <h2 class="text-xl mb-4">Experience</h2>
         <div class="flex flex-wrap items-start">
           <div class="w-full md:w-1/12 print:w-1/12">
-            <img class="w-14 h-14 mb-4" src="icons/amer.png" loading="lazy">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/raliance.svg" loading="lazy">
           </div>
           <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
-            <h1 class="text-lg font-bold text-gray-900">Release Manager</h1>
-            <div class="text-sm text-gray-800">Amer Sports Corporation (as a WIDE consultant)</div>
-            <div class="text-sm text-gray-600">Jul 2018 – Present · 3 yrs</div>
+            <h1 class="text-lg font-bold text-gray-900">Lead Developer</h1>
+            <div class="text-sm text-gray-800">Raliance</div>
+            <div class="text-sm text-gray-600">Jul 2025 – Present</div>
             <div class="text-sm text-gray-600">Annecy, France</div>
-            <p class="text-sm mt-2">Preparing releases in the e-commerce department and pushing the red button to trigger release trains across the globe for e-commerce websites of brands like Salomon, Suunto, Atomic, Wilson, Arcteryx or Armada.</p>
-            <p class="text-sm mt-2 mb-6">Building tooling to help developers. Doing performance analysis and monitoring around the software stack and services. Actively participating in the relationship with our external technical partners.</p>
+            <p class="text-sm mt-2">Lead backend developer for Flunter, a B2B SaaS platform for outbound sales and parallel dialing, working in a small team with direct ownership of backend architecture and infrastructure.</p>
+            <ul class="text-sm mt-2 mb-6 list-disc ml-5 space-y-1">
+              <li>Own backend architecture, data modeling, and API contracts for a Symfony + PostgreSQL platform.</li>
+              <li>Coordinate concurrency-heavy call flows with Twilio, handling unordered webhooks and real-time state.</li>
+              <li>Design queueing, batching, pub/sub, and single-writer patterns to keep latency low at scale.</li>
+              <li>Balance PHP performance constraints with async processing and predictable system behavior.</li>
+              <li>Operate Docker-based deployments on self-hosted VPS with Dokploy, plus secrets and backups.</li>
+              <li>Build CI/CD with GitHub Actions for multi-env testing and reproducible releases.</li>
+              <li>Integrate observability (logs, metrics, dashboards), Cloudflare edge, and NetBird VPN.</li>
+              <li>Run AI exploration POCs and advise product leadership on feasibility, cost, and impact.</li>
+            </ul>
             <hr/>
           </div>
         </div>
         <div class="flex flex-wrap items-start mt-6">
           <div class="w-full md:w-1/12 print:w-1/12">
-            <img class="w-14 h-14 mb-4" src="icons/wide.png" loading="lazy">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/salomon.png" loading="lazy">
+          </div>
+          <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
+            <h1 class="text-lg font-bold text-gray-900">DevSecOps Engineer</h1>
+            <div class="text-sm text-gray-800">Salomon, Amer Sports Group (as a WIDE consultant)</div>
+            <div class="text-sm text-gray-600">Jan 2024 – Jun 2025 · 1 yr 6 mos</div>
+            <div class="text-sm text-gray-600">Annecy, France</div>
+            <p class="text-sm mt-2">Focused on the rebuild of Salomon's e-commerce platform on a MACH architecture with a Next.js frontend hosted on Vercel, aligning delivery practices with performance, SEO, and cost constraints.</p>
+            <ul class="text-sm mt-2 mb-6 list-disc ml-5 space-y-1">
+              <li>Studied and documented Next.js rendering modes (SSR, SSG, ISR, CSR, Partial Prerendering) and their production behavior.</li>
+              <li>Analyzed interactions with Vercel infrastructure, including edge caching, serverless execution, routing, and revalidation.</li>
+              <li>Evaluated performance, SEO, and cost tradeoffs tied to caching and serverless execution strategies.</li>
+              <li>Designed CI/CD pipelines and contribution workflows tailored to the new architecture.</li>
+              <li>Integrated observability with logs, metrics, dashboards, and alerts for the new platform.</li>
+              <li>Designed and operated a progressive rollout between legacy and new platforms.</li>
+              <li>Implemented Fastly routing and redirection logic for traffic split, fallback, and URL structure redesign.</li>
+              <li>Provided technical guidance to developers and architects to support informed architecture decisions.</li>
+            </ul>
+            <hr/>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-start mt-6">
+          <div class="w-full md:w-1/12 print:w-1/12">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/amer.png" loading="lazy">
+          </div>
+          <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
+            <h1 class="text-lg font-bold text-gray-900">Release Engineer</h1>
+            <div class="text-sm text-gray-800">Amer Sports Corporation (as a WIDE consultant)</div>
+            <div class="text-sm text-gray-600">Jul 2018 – Dec 2023 · 5 yrs 6 mos</div>
+            <div class="text-sm text-gray-600">Annecy, France</div>
+            <p class="text-sm mt-2">Operated the shared e-commerce platform used by brands including Salomon, Atomic, Wilson, Peak Performance, and Armada, across multiple regions and high-traffic peaks.</p>
+            <p class="text-sm mt-2">Balanced brand-specific requirements with shared platform components, and helped align delivery practices across teams to improve reliability and scale.</p>
+            <p class="text-sm mt-2">Contributed for ~2.5 years to a major program migrating brand sites to a unified digital platform delivering omnichannel capabilities and a consistent consumer experience.</p>
+            <ul class="text-sm mt-2 mb-6 list-disc ml-5 space-y-1">
+              <li>Operated and configured production deployments multiple times per week across regions and brands.</li>
+              <li>Managed and evolved GitLab CI pipelines for build, test, quality gates, and deployments.</li>
+              <li>Defined and maintained Git/GitLab workflows, including branching strategies and contribution rules.</li>
+              <li>Built internal tooling and scripts in Go and shell to support operations and developer workflows.</li>
+              <li>Designed and maintained local development environments to reduce onboarding friction.</li>
+              <li>Integrated observability tooling for logging, metrics, dashboards, and alerting.</li>
+              <li>Acted as a transversal technical contributor across teams and brands.</li>
+            </ul>
+            <hr/>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-start mt-6">
+          <div class="w-full md:w-1/12 print:w-1/12">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/wide.png" loading="lazy">
           </div>
           <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
             <h1 class="text-lg font-bold text-gray-900">Software Engineer</h1>
             <div class="text-sm text-gray-800">WIDE</div>
-            <div class="text-sm text-gray-600">Jul 2017 – Present · 4 yrs</div>
+            <div class="text-sm text-gray-600">Jul 2017 – Jun 2018 · 1 yr</div>
             <div class="text-sm text-gray-600">Geneva, Switzerland</div>
-            <p class="text-sm mt-2 mb-6">Involved in the e-commerce department of WIDE. Conception, analysis, development and maintenance of e-commerce applications for large business actors such as TAG Heuer, Salomon, or Piguet Galland.</p>
+            <p class="text-sm mt-2">Designed, built, and maintained enterprise e-commerce applications for brands including TAG Heuer, Salomon, and Piguet Galland, covering analysis through production support.</p>
+            <ul class="text-sm mt-2 mb-6 list-disc ml-5 space-y-1">
+              <li>Translated business requirements into technical specifications and delivery plans.</li>
+              <li>Developed and maintained features across the stack for large-scale commerce sites.</li>
+              <li>Standardized local development environments with reproducible Docker stacks.</li>
+              <li>Improved CI pipelines and developer tooling, including deployment scripts.</li>
+              <li>Orchestrated containers on AWS Fargate and deployed a Drupal stack with Docker Swarm.</li>
+              <li>Partnered with sales teams to introduce DevOps practices to clients.</li>
+            </ul>
             <hr/>
           </div>
         </div>
         <div class="flex flex-wrap items-start mt-6">
           <div class="w-full md:w-1/12 print:w-1/12">
-            <img class="w-14 h-14 mb-4" src="icons/smile.jpg" loading="lazy">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/smile.jpg" loading="lazy">
           </div>
           <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
             <h1 class="text-lg font-bold text-gray-900">Software Engineer</h1>
             <div class="text-sm text-gray-800">Smile Open Source Solutions</div>
             <div class="text-sm text-gray-600">Sep 2015 – Jun 2017 · 1 yr 10 mos</div>
             <div class="text-sm text-gray-600">Geneva, Switzerland</div>
-            <p class="text-sm mt-2">E-commerce Magento developer. Building and developing applications for prestigious businesses such as Nestlé, Swatch or Sunstar.</p>
+            <p class="text-sm mt-2">Built and maintained Magento-based e-commerce platforms for enterprise clients including Nestlé, Swatch, and Sunstar, covering both frontend and backend delivery.</p>
+            <ul class="text-sm mt-2 mb-6 list-disc ml-5 space-y-1">
+              <li>Conceived and specified features from business needs, then implemented them end-to-end.</li>
+              <li>Developed across the full stack (PHP, Python, HTML/CSS/JavaScript) within Magento.</li>
+              <li>Reviewed code and enforced best practices to keep quality consistent across teams.</li>
+              <li>Operated Linux test and production environments (RedHat/Debian) and supported releases.</li>
+              <li>Introduced CI and automated deployments, and built Docker-based dev environments.</li>
+              <li>Maintained deployment tooling with Ansible and a Capistrano-style workflow.</li>
+              <li>Collaborated directly with business and engineering stakeholders to clarify scope and constraints.</li>
+              <li>Worked with Varnish, Apache, Redis, and Elasticsearch to support performance and reliability.</li>
+            </ul>
+            <hr/>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-start mt-6">
+          <div class="w-full md:w-1/12 print:w-1/12">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/smile.jpg" loading="lazy">
+          </div>
+          <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
+            <h1 class="text-lg font-bold text-gray-900">Software Engineer Internship</h1>
+            <div class="text-sm text-gray-800">Smile Open Source Solutions</div>
+            <div class="text-sm text-gray-600">Mar 2015 – Aug 2015 · 6 mos</div>
+            <div class="text-sm text-gray-600">Geneva, Switzerland</div>
+            <p class="text-sm mt-2">Contributed to Magento e-commerce and CMS work for Sunstar, with a focus on production bug fixes and small feature changes.</p>
+            <ul class="text-sm mt-2 mb-6 list-disc ml-5 space-y-1">
+              <li>Fixed issues and implemented changes across Magento projects.</li>
+              <li>Participated in training sessions on the Magento stack and tooling.</li>
+              <li>Joined Scrum training sessions and applied Agile practices within the team.</li>
+              <li>Helped build two end-to-end e-commerce/CMS applications for Sunstar.</li>
+            </ul>
+            <hr/>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-start mt-6">
+          <div class="w-full md:w-1/12 print:w-1/12">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/cmre.webp" loading="lazy">
+          </div>
+          <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
+            <h1 class="text-lg font-bold text-gray-900">Web and Mobile Developer Internship</h1>
+            <div class="text-sm text-gray-800">CMRE (OKTEO since 2018)</div>
+            <div class="text-sm text-gray-600">May 2014 – Aug 2014 · 4 mos</div>
+            <div class="text-sm text-gray-600">Ceyzériat, France</div>
+            <p class="text-sm mt-2">Delivered two internal tools, one for logistics tracking and another for employee vacation management.</p>
+            <ul class="text-sm mt-2 mb-6 list-disc ml-5 space-y-1">
+              <li>Built an Android app to track dairy delivery routes and driver activities.</li>
+              <li>Developed a mobile/tablet single-page app for the vacation intranet using AngularJS.</li>
+              <li>Implemented a REST API integration and responsive UI with Bootstrap.</li>
+            </ul>
+            <hr/>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-start mt-6">
+          <div class="w-full md:w-1/12 print:w-1/12">
+            <img class="w-14 h-14 mb-4 object-contain" src="icons/cmre.webp" loading="lazy">
+          </div>
+          <div class="w-full md:w-11/12 md:pl-6 print:w-11/12 print:pl-6">
+            <h1 class="text-lg font-bold text-gray-900">Web Developer Internship</h1>
+            <div class="text-sm text-gray-800">CMRE (OKTEO since 2018)</div>
+            <div class="text-sm text-gray-600">Jun 2013 – Aug 2013 · 3 mos</div>
+            <div class="text-sm text-gray-600">Ceyzériat, France</div>
+            <p class="text-sm mt-2">Migrated the employee vacation scheduling and management tool from a desktop application to a web app using Java and JSF.</p>
           </div>
         </div>
       </div>
@@ -161,29 +288,49 @@
         <h2 class="text-xl mb-4">Skills</h2>
         <ul>
           <li class="flex flex-wrap">
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Golang</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">DevOps</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Linux/Unix</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Nix & NixOS</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Web development</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">GitLab CI</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Shell</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">SQL</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Python</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Go</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">C</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">POSIX Shell</span>
             <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">PHP</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">JavaScript</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Vala</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Linux/Unix</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Alpine Linux</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">POSIX tools</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Software architecture</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">System design</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">API design</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Backend development</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Web development</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">CSS</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">GTK</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">HTMX</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Hypermedia-Driven applications</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Datastar</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Alpine.js</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Relational databases</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">SQL</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Mechanical sympathy</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Concurrency patterns</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Pub/Sub</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Domain-Driven Design (DDD)</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Business-domain modeling</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Agile methodologies</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Shape Up methodology</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">DevOps principles</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">CI/CD pipelines</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Infrastructure as code</span>
             <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Docker</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Git</span>
             <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Ansible</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Zig</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Tailwind CSS</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Vim</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Software design</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Software testing</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Software refactoring</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Mentoring</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Communication</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Agile principles</span>
-            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Project management</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Nix</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">NixOS</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Observability</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Application metrics</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Git</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Source code exploration</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Technical coordination</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Knowledge sharing</span>
+            <span class="mr-2 my-1 rounded-full border px-4 text-sm py-1 bg-gray-200">Conflict mediation</span>
           </li>
         </ul>
       </div>
@@ -215,4 +362,3 @@
     </script>
   </body>
 </html>
-
